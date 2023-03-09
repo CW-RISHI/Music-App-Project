@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 30px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+}
+
+ul li{
+    padding: 0 18px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    margin: 0 4px;
+    font-size: 1.2rem;
+}
+
+.brand img{
+    width: 28px;
+}
+
+.container{
+    min-height: 60vh;
+    background-color: rgb(160, 36, 36);
+    color: white;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    margin: 23px auto;
+    width: 80%;
+    border-radius: 12px;
+    background-image: url(https://thumbs.dreamstime.com/z/mp3-player-background-13784816.jpg);
+    padding: 30px;
+}
+.container img{
+    width: 100px;
+}
+
+.songConatiner{
+    margin: 25px 0;
+}
+
+.songs {
+    display: flex;
+    height: 50px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3px 0;
+    padding: 0 3px;
+    border-radius: 30px;
+}
+
+.songs img{
+    width: 43px;
+    border-radius: 30px;
+}
+.timeStamp{
+    display: flex;
+    align-items: center;
+}
+.timeStamp i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+.bottom{
+    background-color: black;
+    height: 130px;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songsInfo{
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    left: 9vw;
+}
+
+.songsInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
